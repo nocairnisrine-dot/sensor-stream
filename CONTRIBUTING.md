@@ -24,7 +24,7 @@ Le membre n relit le membre n+1, le dernier relit le premier.
 - Documentaliste : MOUSSALIM Ali
 - Tous les membres sont développeurs.
 
-## Ordre de relecture
+## Qui relit qui
 NOCAIR Nesrine relit IBNOU EL KHATAB Farouk,
 qui relit MEKKAOUI Anass, qui relit BAHIAOUI
 Imane, qui relit JAMMARI Zineb, qui relit
@@ -33,3 +33,9 @@ MOUSSALIM Ali, qui relit NOCAIR Nesrine.
 ## Identités
 Le compte GitHub ANAS-03-MEK correspond à
 MEKKAOUI Anass.
+
+## Lancer les tests
+Depuis la racine du projet :
+
+    pip install -r requirements.txt
+    python -m pytest
