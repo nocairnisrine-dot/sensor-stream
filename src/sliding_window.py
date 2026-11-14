@@ -12,6 +12,8 @@ class SlidingWindow:
         self._values = deque(maxlen=size)
 
     def add(self, value):
+        if not isinstance(value, (int, float)):
+            raise TypeError("value doit être un nombre")
         self._values.append(value)
 
     def values(self):

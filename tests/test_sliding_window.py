@@ -33,3 +33,9 @@ def test_invalid_size():
 
 def test_moving_average():
     assert moving_average([1, 2, 3, 4], 2) == [1, 1.5, 2.5, 3.5]
+
+
+def test_add_rejects_non_number():
+    w = SlidingWindow(3)
+    with pytest.raises(TypeError):
+        w.add("abc")
