@@ -37,3 +37,10 @@ def test_missing_column_raises(tmp_path):
     bad = _readings().drop(columns=["value"])
     with pytest.raises(ValueError):
         save_readings(bad, db)
+
+
+def test_unknown_sensor_returns_empty(tmp_path):
+    db = str(tmp_path / "readings.db")
+    save_readings(_readings(), db)
+    out = load_readings(db, sensor_id="temp_99")
+    assert len(out) == 0
