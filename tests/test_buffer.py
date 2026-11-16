@@ -21,3 +21,10 @@ def test_empty_buffer_has_columns():
 
     assert len(df) == 0
 
+
+
+def test_len_counts_items():
+    buf = ReadingBuffer(maxlen=3)
+    buf.add("2026-11-20 10:00:00", "temp_01", 1.0)
+    buf.add("2026-11-20 10:00:01", "temp_01", 2.0)
+    assert len(buf) == 2
