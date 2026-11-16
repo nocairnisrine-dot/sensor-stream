@@ -13,7 +13,7 @@ alertes, stockage et affichage texte.
 
 Format des données : timestamp, sensor_id, value
 
-- generator : simule des capteurs - NOCAIR Nesrine
+- generator : génération de mesures de capteurs - NOCAIR Nesrine
 
 - buffer : garde les N dernières mesures - MEKKAOUI Anass
 
