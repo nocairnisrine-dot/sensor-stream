@@ -20,3 +20,11 @@ def test_dashboard_lists_sensors():
     assert "temp_01" in text
     assert "temp_02" in text
     assert "Alertes : 0" in text
+
+
+def test_dashboard_handles_empty_dataframe():
+    import pandas as pd
+    from src.textdashboard import render_dashboard
+    df = pd.DataFrame(columns=["timestamp", "sensor_id", "value"])
+    text = render_dashboard(df)
+    assert "Alertes : 0" in text
