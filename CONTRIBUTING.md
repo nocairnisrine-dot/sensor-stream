@@ -21,7 +21,7 @@ Le membre n relit le membre n+1, le dernier relit le premier.
 ## Rôles
 - Release Manager : NOCAIR Nesrine
 - Intégrateur : IBNOU EL KHATAB Farouk
-- Documentaliste : MOUSSALIM Ali
+- Documentaliste : JAMMARI Zineb
 - Tous les membres sont développeurs.
 
 ## Qui relit qui
